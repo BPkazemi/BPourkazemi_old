@@ -1,4 +1,4 @@
-var express = require('Express'),
+var express = require('express'),
 	path = require('path');
 
 var server = module.exports = express();
