@@ -1,11 +1,7 @@
 {
-	"name": "first-server",
-	"version": "0.0.1",
-	"dependencies": {
-		"express": "3.1.x"
-	},
-	"engines": {
-		"node": "0.10.x",
-		"npm": "1.2.x"
-	}
+	"name": "bpourkazemi",
+ 	"version": "0.1.0",
+  	"devDependencies": {
+    	"express": "3.1.x"
+  }
 }
