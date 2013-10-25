@@ -11,6 +11,10 @@ app.controller('MainCtrl', function($scope, $location) {
 		{
 			name: 'Nassim Taleb Visualization',
 			link: 'http://bpkazemi.github.io/NTVisual'
+		},
+		{
+			name: "Search Command Line",
+			link: 'https://github.com/BPkazemi/search-command-line-app'
 		}
 	];
 
