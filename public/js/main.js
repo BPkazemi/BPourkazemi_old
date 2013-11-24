@@ -13,8 +13,12 @@ app.controller('MainCtrl', function($scope, $location) {
 			link: 'http://bpkazemi.github.io/NTVisual'
 		},
 		{
-			name: "Search Command Line",
+			name: 'Search Command Line',
 			link: 'https://github.com/BPkazemi/search-command-line-app'
+		},
+		{
+			name: 'Stritter',
+			link: 'http://stritter.bpourkazemi.com'
 		}
 	];
 
