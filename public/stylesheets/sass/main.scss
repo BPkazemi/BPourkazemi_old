@@ -16,7 +16,7 @@ $desert: #F1DDBB;
 $mainFontSize: 50px;
 $subFontSize: 30px;
 
-// Currently selected colors from above
+// Currently used colors
 $leftPaneColor: $alizarin;
 
 $mainTextColor: $lightGrey;
@@ -78,7 +78,7 @@ a:hover {
 /* Specific styles */
 /* --------------- */
 
-.left {
+.first {
     width: 27%;
     height: 100%;
     opacity: 0.92;
@@ -131,7 +131,7 @@ a:hover {
         color: $subTextColor;
     }
 }
-.right {
+.second {
     width: 55%;
     float: left;
     font-family: $contentFont, sans-serif;

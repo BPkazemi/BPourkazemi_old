@@ -36,7 +36,7 @@ a:hover {
 
 /* Specific styles */
 /* --------------- */
-.left {
+.first {
   width: 27%;
   height: 100%;
   opacity: 0.92;
@@ -47,38 +47,38 @@ a:hover {
   -o-transition: 0.2s;
   transition: 0.2s;
   font-family: "kavoon", sans-serif; }
-  .left .github {
+  .first .github {
     position: absolute;
     top: 10px;
     left: 100px;
     font-size: 10px; }
-  .left .content-wrapper {
+  .first .content-wrapper {
     position: relative;
     top: 10%;
     left: 18%;
     width: 80%; }
-  .left .tab {
+  .first .tab {
     display: inline-block;
     padding: 5px;
     margin-top: 5px; }
-  .left .selected {
+  .first .selected {
     color: #f8eddb;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
     background: transparent; }
-  .left .title.name {
+  .first .title.name {
     display: inline-block;
     font-size: 50px;
     color: #f1ddbb;
     cursor: default; }
-  .left .subtitle {
+  .first .subtitle {
     cursor: default; }
-  .left .title-menu {
+  .first .title-menu {
     font-size: 30px;
     color: #0b2c3c; }
 
-.right {
+.second {
   width: 55%;
   float: left;
   font-family: lato, sans-serif;
@@ -86,26 +86,26 @@ a:hover {
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s; }
-  .right .content-wrapper {
+  .second .content-wrapper {
     position: relative; }
-  .right .title {
+  .second .title {
     visibility: hidden;
     font-size: 50px;
     color: #bababa; }
-  .right .content {
+  .second .content {
     font-size: 30px;
     color: #0b2c3c;
     margin-left: 5%;
     cursor: default; }
-  .right a.content:hover {
+  .second a.content:hover {
     color: #dadfe1;
     background: #0b2c3c; }
-  .right .bucketlist-tab-wrapper {
+  .second .bucketlist-tab-wrapper {
     cursor: default !important; }
-  .right .projects-list {
+  .second .projects-list {
     margin: 0;
     padding: 0; }
-  .right .quote {
+  .second .quote {
     position: absolute;
     right: 50px;
     bottom: 5px;

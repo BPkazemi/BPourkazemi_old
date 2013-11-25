@@ -3,6 +3,7 @@ var app = angular.module('app', []);
 app.controller('MainCtrl', function($scope, $location) {
 
 	// Move to service or factory
+		// "Hey there! I'm a junior at UVA who enjoys working on side projects, watching a good movie, and staying active. My story is a long one, but here's a shorter version: \nI came into UVA set to be a systems and economics double, and forge a path in finance. The alure of that life quickly faded as I spent the summer of my first year at hackcville. The notion that just a couple people can build something to impact thousands, millions, billions - incredible. I switched to CS, and haven't looked back since."
 	$scope.about = [
 		"Live, laugh, eat, hike, think, code, and create."
 	];
@@ -33,12 +34,12 @@ app.controller('MainCtrl', function($scope, $location) {
 	];
 
 	// ------- UI changes -------
-	$('.left').on('mouseover', function() {
+	$('.first').on('mouseover', function() {
 		$(this).css({
 			width: '32%',
 			opacity: 1
 		});
-		$('.right').css({
+		$('.second').css({
 			width: '50%'
 		});
 	}).on('mouseout', function() {
@@ -46,24 +47,25 @@ app.controller('MainCtrl', function($scope, $location) {
 			width: '27%',
 			opacity: 0.92
 		});
-		$('.right').css({
+		$('.second').css({
 			width: '55%'
 		});
 	});
 
 	$('.tab').on('click', function() {
-			// Add custom styling to selected tab
-			$('.tab').each(function() {
-				$(this).removeClass('selected');
-			});
-			$(this).addClass('selected');
+		// On tab click...
+		// Add custom styling to selected tab
+		$('.tab').each(function() {
+			$(this).removeClass('selected');
+		});
+		$(this).addClass('selected');
 
-			// Hide all right side content
-			$('.tab-content').css('display', 'none');
+		// Hide all content
+		$('.tab-content').css('display', 'none');
 
-			// Show appropriate right side content
-			var tabName = $(this).get(0).id;
-			$('.' + tabName + '-wrapper').css('display', 'block')
+		// Show appropriate content
+		var tabName = $(this).get(0).id;
+		$('.' + tabName + '-wrapper').css('display', 'block')
 	});
 
 });
@@ -89,5 +91,5 @@ app.config(function($routeProvider, $locationProvider) {
 		redirectTo: '/'
 	});
 
-	// $locationProvider.html5Mode(true);
+	$locationProvider.html5Mode(true);
 })
