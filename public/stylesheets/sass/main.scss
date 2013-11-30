@@ -13,8 +13,8 @@ $classyGrey: #DADFE1;
 $lightGrey: #BABABA;
 $desert: #F1DDBB;
 
-$mainFontSize: 50px;
-$subFontSize: 30px;
+$mainFontSize: 40px;
+$subFontSize: 3vw;
 
 // Currently used colors
 $leftPaneColor: $alizarin;
@@ -38,7 +38,7 @@ $nameColor: $desert;
     padding-left: $paddingLeft;
 }
 
-/* General styles */
+/* Global Styles */
 /* -------------- */
 
 html {
@@ -70,19 +70,32 @@ a:hover {
     background: $linkHoverbackground;
 }
 
+// row = 100% on large screens only,
+// which results in a better responsive design
+@media screen and (min-width: 992px)
+{
+    .row {
+        height: 100%;
+    }
+}
+
 .main-wrapper {
     width: 100%;
     height: 100%;
+    padding: 0 15px;
 }
 
-/* Specific styles */
+.padLeft {
+    font-family: "kavoon", sans-serif;
+    @include padLeft(50px);
+}
+
+/* Selected Styles */
 /* --------------- */
 
 .first {
-    width: 27%;
     height: 100%;
     opacity: 0.92;
-    float: left;
     background: $leftPaneColor;
         -webkit-transition: 0.2s;
         -moz-transition: 0.2s;
@@ -91,10 +104,9 @@ a:hover {
     font-family: "kavoon", sans-serif;
 
     .github {
-        position: absolute;
-        top: 10px;
-        left: 100px;
         font-size: 10px;
+        right: 0px;
+        margin-left: 104px;
     }
 
     .content-wrapper {
@@ -117,23 +129,22 @@ a:hover {
         background: transparent;
     }
 
-    .title.name {
+    .name {
+        font-family: "kavoon", sans-serif;
         display: inline-block;
-        font-size: $mainFontSize;
+        font-size: 2.5vw;
         color: $nameColor;
         cursor: default;
     }
     .subtitle {
         cursor: default;
     }
-    .title-menu {
-        font-size: $subFontSize;
+    .side-nav-a {
+        font-size: 2vw;
         color: $subTextColor;
     }
 }
 .second {
-    width: 55%;
-    float: left;
     font-family: $contentFont, sans-serif;
     -webkit-transition: 0.2s;
         -moz-transition: 0.2s;
@@ -178,13 +189,7 @@ a:hover {
     }
 }
 .third {
-    width: 18%;
     height: 100%;
-    float: left;
+    min-height: 100%;
     background: $leftPaneColor;
-}
-
-.padLeft {
-    font-family: "kavoon", sans-serif;
-    @include padLeft(50px);
 }

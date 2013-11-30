@@ -35,20 +35,20 @@ app.controller('MainCtrl', function($scope, $location) {
 
 	// ------- UI changes -------
 	$('.first').on('mouseover', function() {
+		$(this).removeClass('col-md-3').addClass('col-md-4');
+		$('.second').removeClass('col-md-7').addClass('col-md-6');
+
 		$(this).css({
-			width: '32%',
 			opacity: 1
 		});
-		$('.second').css({
-			width: '50%'
-		});
-	}).on('mouseout', function() {
+	});
+
+	$('.first').on('mouseout', function() {
+		$(this).removeClass('col-md-4').addClass('col-md-3');
+		$('.second').removeClass('col-md-6').addClass('col-md-7');
+
 		$(this).css({
-			width: '27%',
-			opacity: 0.92
-		});
-		$('.second').css({
-			width: '55%'
+			opacity: 0.90
 		});
 	});
 

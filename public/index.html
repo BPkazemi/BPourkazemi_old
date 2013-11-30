@@ -9,13 +9,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Babak Pourkazemi</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Mobile-friendly -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- ~~~~~~~ Stylesheets ~~~~~~~ -->
         <!-- Bootstrap 3 -->
-        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
         <!-- Google Fonts (Kavoon & Lato) -->
         <link href='http://fonts.googleapis.com/css?family=Kavoon' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -24,15 +25,6 @@
         <link rel="stylesheet" href="stylesheets/css/h5bp.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/css/main.css">
 
-        <!-- ~~~~~~~~ Scripts ~~~~~~~~ -->
-        <!-- jQuery -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <!-- Bootstrap -->
-        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
-        <!-- Angular -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js" type="text/javascript"></script>
-        <!-- Application Scripts -->
-        <script type="text/javascript" src="./js/main.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -40,39 +32,49 @@
         <![endif]-->
 
         <!-- Application content  test-->
-        <div class="main-wrapper">
-
-            <!--- Left Wrapper -->
-            <div class="first">
-                <a href="http://www.github.com/BPKazemi" class="github">Don't click me!</a>
-                <div class="content-wrapper">
-                    <div class="title name">BPkazemi</div>
-                    <div class='subtitle'>(~~ Student @ UVA ~~)</div>
-                    <div class="title-menu">
-                        <ul>
-                            <li><a class="tab selected" href="#/about_me">About</a></li>
-                            <li><a class="tab" href="#/projects">Projects</a></li>
-                            <li><a class="tab" href="#/bucket_list">Bucket List</a></li>
-                            <li><a class="tab" href="http://www.bpkazemi.tumblr.com"><u>Tumblr</u></a></li>
-                        </ul>
+        <div class="main-wrapper container">
+            <div class="row">
+                <!--- Left Wrapper -->
+                <div class="first col-xs-12 col-md-3 full-height">
+                    <div class="content-wrapper">
+                        <h1 class="name">BPourkazemi</h1>
+                        <div class='subtitle'>(~~ Student @ UVA ~~)</div>
+                        <div class="side-nav-a">
+                            <ul>
+                                <li><a class="tab selected" href="#/about_me">About</a></li>
+                                <li><a class="tab" href="#/projects">Projects</a></li>
+                                <li><a class="tab" href="#/bucket_list">Bucket List</a></li>
+                                <li><a class="tab" href="http://www.bpkazemi.tumblr.com"><u>Tumblr</u></a></li>
+                            </ul>
+                        </div>
+                        <a href="//www.github.com/BPKazemi" class="github">Don't click me!</a>
                     </div>
                 </div>
-            </div>
-            <!-- Right Wrapper -->
-            <div class="second">
-                <div class="content">
-                    <div ng-view=""></div>
+                <!-- Right Wrapper -->
+                <div class="second col-xs-12 col-md-7">
+                    <div class="content">
+                        <div ng-view=""></div>
+                    </div>
                 </div>
-            </div>
-            <div class="third">
-                <div class="padLeft">
-                    <p>
-                        (<a href="mailto:bp5xj@virginia.edu">Email</a> | <a href="http://www.linkedin.com/in/babakpourkazemi">LinkedIn</a>)
-                    </p>
+                <div class="third col-xs-12 col-md-2">
+                    <div class="padLeft">
+                        <p>
+                            (<a href="mailto:bp5xj@virginia.edu">Email</a> | <a href="//www.linkedin.com/in/babakpourkazemi">LinkedIn</a>)
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!-- ~~~~~~~~ Scripts ~~~~~~~~ -->
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+        <!-- Angular -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js" type="text/javascript"></script>
+        <!-- Application Scripts -->
+        <script type="text/javascript" src="./js/main.js"></script>
         <!-- Google Analytics -->
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
