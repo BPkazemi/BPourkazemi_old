@@ -19,7 +19,7 @@ app.controller('MainCtrl', function($scope, $location) {
 		},
 		{
 			name: 'Stritter',
-			link: 'stritter.bpourkazemi.com'
+			link: 'http://stritter.bpourkazemi.com'
 		}
 	];
 
