@@ -1,14 +1,6 @@
 var app = angular.module('app', []);
 
 app.controller('MainCtrl', function($scope, $location) {
-	var folded = new OriDomi('.name', {
-		shadingIntensity: 0,
-		maxAngle: 50,
-		shading: 'soft',
-		touchEnabled: false
-	});
-	folded.twist(30).wait(500).twist(-50).twist(0);
-
 	// Move to service or factory
 		// "Live, laugh, eat, hike, think, code, and create."
 		// My story is a long one, but here's a shorter version: \nI came into UVA set to be a systems and economics double, and forge a path in finance. The alure of that life quickly faded as I spent the summer of my first year at a local incubator (hackcville) building my first app. The notion that only a few people can leverage software to impact many more people was the main reason I switched to CS, and it's been a great ride since.
