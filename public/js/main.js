@@ -1,11 +1,19 @@
 var app = angular.module('app', []);
 
 app.controller('MainCtrl', function($scope, $location) {
+	var folded = new OriDomi('.name', {
+		shadingIntensity: 0,
+		maxAngle: 50,
+		shading: 'soft',
+		touchEnabled: false
+	});
+	folded.twist(30).wait(500).twist(-50).twist(0);
 
 	// Move to service or factory
-		// "Hey there! I'm a junior at UVA who enjoys working on side projects, watching a good movie, and staying active. My story is a long one, but here's a shorter version: \nI came into UVA set to be a systems and economics double, and forge a path in finance. The alure of that life quickly faded as I spent the summer of my first year at hackcville. The notion that just a couple people can build something to impact thousands, millions, billions - incredible. I switched to CS, and haven't looked back since."
+		// "Live, laugh, eat, hike, think, code, and create."
+		// My story is a long one, but here's a shorter version: \nI came into UVA set to be a systems and economics double, and forge a path in finance. The alure of that life quickly faded as I spent the summer of my first year at a local incubator (hackcville) building my first app. The notion that only a few people can leverage software to impact many more people was the main reason I switched to CS, and it's been a great ride since.
 	$scope.about = [
-		"Live, laugh, eat, hike, think, code, and create."
+		"Hi there! I'm Babak, a junior at UVA who enjoys working on side projects. Check out my Github, Tumblr, or LinkedIn."
 	];
 
 	$scope.projects = [
@@ -19,7 +27,7 @@ app.controller('MainCtrl', function($scope, $location) {
 		},
 		{
 			name: 'Stritter',
-			link: 'http://stritter.bpourkazemi.com'
+			link: 'stritter.bpourkazemi.com'
 		}
 	];
 
@@ -36,7 +44,7 @@ app.controller('MainCtrl', function($scope, $location) {
 	// ------- UI changes -------
 	$('.first').on('mouseover', function() {
 		$(this).removeClass('col-md-3').addClass('col-md-4');
-		$('.second').removeClass('col-md-7').addClass('col-md-6');
+		$('.second').removeClass('col-md-8').addClass('col-md-7');
 
 		$(this).css({
 			opacity: 1
@@ -45,7 +53,7 @@ app.controller('MainCtrl', function($scope, $location) {
 
 	$('.first').on('mouseout', function() {
 		$(this).removeClass('col-md-4').addClass('col-md-3');
-		$('.second').removeClass('col-md-6').addClass('col-md-7');
+		$('.second').removeClass('col-md-7').addClass('col-md-8');
 
 		$(this).css({
 			opacity: 0.90
