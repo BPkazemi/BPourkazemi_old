@@ -5,17 +5,18 @@ app.controller('MainCtrl', function($scope, $location) {
 		// "Live, laugh, eat, hike, think, code, and create."
 		// My story is a long one, but here's a shorter version: \nI came into UVA set to be a systems and economics double, and forge a path in finance. The alure of that life quickly faded as I spent the summer of my first year at a local incubator (hackcville) building my first app. The notion that only a few people can leverage software to impact many more people was the main reason I switched to CS, and it's been a great ride since.
 	$scope.about = [
-		"Hi there! I'm Babak, a junior at UVA who enjoys working on side projects. Check out my Github, Tumblr, or LinkedIn."
+		"Hi. I'm Babak, a junior at UVA who enjoys working on side projects. Check out my Github or Tumblr!"
 	];
 
+
+		// {
+		// 	name: 'Search Command Line',
+		// 	link: 'https://github.com/BPkazemi/search-command-line-app'
+		// },
 	$scope.projects = [
 		{
 			name: 'Nassim Taleb Visualization',
 			link: 'http://bpkazemi.github.io/NTVisual'
-		},
-		{
-			name: 'Search Command Line',
-			link: 'https://github.com/BPkazemi/search-command-line-app'
 		},
 		{
 			name: 'Stritter',
