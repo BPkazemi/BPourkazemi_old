@@ -16,7 +16,7 @@ app.controller('MainCtrl', function($scope, $location) {
 	$scope.projects = [
 		{
 			name: 'Nassim Taleb Visualization',
-			link: 'http://bpkazemi.github.io/NTVisual'
+			link: 'http://blackswan.bpourkazemi.com'
 		},
 		{
 			name: 'Stritter',
