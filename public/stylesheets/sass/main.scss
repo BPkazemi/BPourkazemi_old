@@ -70,6 +70,10 @@ a:hover {
     background: $linkHoverbackground;
 }
 
+.pill {
+    font-size: 20px;
+}
+
 // row = 100% on large screens only,
 // which results in a better responsive design
 @media screen and (min-width: 992px)

@@ -2,12 +2,9 @@ var app = angular.module('app', []);
 
 app.controller('MainCtrl', function($scope, $location) {
 	// Move to service or factory
-		// "Live, laugh, eat, hike, think, code, and create."
-		// My story is a long one, but here's a shorter version: \nI came into UVA set to be a systems and economics double, and forge a path in finance. The alure of that life quickly faded as I spent the summer of my first year at a local incubator (hackcville) building my first app. The notion that only a few people can leverage software to impact many more people was the main reason I switched to CS, and it's been a great ride since.
 	$scope.about = [
 		"Hi. I'm Babak, a junior at UVA who enjoys working on side projects. Check out my Github or Tumblr!"
 	];
-
 
 		// {
 		// 	name: 'Search Command Line',
@@ -35,6 +32,7 @@ app.controller('MainCtrl', function($scope, $location) {
 	];
 
 	// ------- UI changes -------
+	// On mouseover, expand the menu bar
 	$('.first').on('mouseover', function() {
 		$(this).removeClass('col-md-3').addClass('col-md-4');
 		$('.second').removeClass('col-md-8').addClass('col-md-7');
@@ -44,6 +42,7 @@ app.controller('MainCtrl', function($scope, $location) {
 		});
 	});
 
+	// On mouseout, contract the menu bar
 	$('.first').on('mouseout', function() {
 		$(this).removeClass('col-md-4').addClass('col-md-3');
 		$('.second').removeClass('col-md-7').addClass('col-md-8');
@@ -53,22 +52,13 @@ app.controller('MainCtrl', function($scope, $location) {
 		});
 	});
 
-	$('.tab').on('click', function() {
-		// On tab click...
-		// Add custom styling to selected tab
-		$('.tab').each(function() {
-			$(this).removeClass('selected');
+	// On nav item clicks, update the 'active' state
+	$('.pill').on('click', function() {
+		$('.pill').each(function() {
+			$(this).removeClass('active');
 		});
-		$(this).addClass('selected');
-
-		// Hide all content
-		$('.tab-content').css('display', 'none');
-
-		// Show appropriate content
-		var tabName = $(this).get(0).id;
-		$('.' + tabName + '-wrapper').css('display', 'block')
+		$(this).addClass('active');
 	});
-
 });
 
 app.config(function($routeProvider, $locationProvider) {
